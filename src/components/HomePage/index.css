@@ -1,0 +1,88 @@
+/* Home-page */
+.homepage-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.para-top-home{
+    font-weight:700;
+    font-size: 15px;
+    padding:10px;
+    align-self: flex-start;
+}
+
+.home-maincomplaintList-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* index.css */
+
+/* Reset default margin and padding for consistent styling */
+hr {
+    margin: 0;
+    padding: 0;
+  }
+
+.line-style {
+    background-color: red; /* Set the color of the line */
+    height: 2px; /* Set the height of the line */
+    border: none; /* Remove default border */
+    margin: 20px 0; /* Adjust margin as needed */
+    color:black;
+  }
+
+
+/* Sign-in Box */
+
+.signbox-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    border-width:1px;
+    max-width:100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(231, 231, 231, 0.71);
+}
+
+.sign-btn{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right:20px;
+    background-color:#29b7c4;
+    border-style: none;
+    border-radius: 10px;
+    color:white;
+    font-size: 17px;
+}
+
+.heading{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+
+/* Response design */
+
+@media screen and (max-width: 768px) {
+    .para-top-home {
+      display: none;
+    }
+
+    .sign-btn{
+        padding: 10px;
+    }
+
+    .home-maincomplaintList-container{
+        flex-direction: column;
+    }
+  }

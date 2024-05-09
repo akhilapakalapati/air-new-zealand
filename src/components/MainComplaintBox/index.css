@@ -1,0 +1,19 @@
+.remove-line{
+    text-decoration: none;
+    color:inherit;
+}
+
+.maincomplaint-style{
+    padding:20px;
+    margin:20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.btn-maincomplaint{
+    border-style: solid;
+    background-color: white;
+    border-width: 1px;
+    border-color: #29b7c4;
+    color:#29b7c4;
+}

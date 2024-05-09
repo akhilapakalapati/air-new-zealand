@@ -1,0 +1,35 @@
+.link-conatiner{
+   text-decoration:none;
+}
+
+.nav-conatiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black;
+    background-size:cover;
+    max-width: 100%;
+}
+
+.logo-style{
+    height:90px;
+    width:190px;
+}
+
+.para-container-nav{
+    text-decoration:none;
+}
+
+
+.para-nav{
+    color:#34dbeb;
+    font-size:20px;
+    font-weight: 400;
+    padding: 5px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+    
+}

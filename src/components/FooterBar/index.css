@@ -1,0 +1,19 @@
+.footer-bar-main-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-end;
+    background-color:black;
+    color:white;
+}
+
+.footer-bar-style{
+    height:90px;
+    width:190px;
+}
+
+.main-footerbar-container{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}

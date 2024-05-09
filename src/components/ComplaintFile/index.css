@@ -1,0 +1,48 @@
+/*main-container */
+.complaintFile-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15%;
+}
+
+.complaintTop-para-1{
+    color: black;
+    font-weight: 700;
+}
+
+
+/*top-container */
+.Complainttop-conatiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px;
+    padding:3%;
+    border-style:solid;
+    border-radius: 7px;
+    border-color:black;
+    border-width:1px;
+}
+
+.complainttop-btn{
+    border-style: solid;
+    background-color: white;
+    border-width: 1px;
+    border-color: #29b7c4;
+    color:#29b7c4;
+    font-size:17px;
+    padding:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+}
+
+/*image */
+
+.thumbsup-logo-cf{
+    height:50px;
+    width: 50px;
+    border-radius:25px;
+}
