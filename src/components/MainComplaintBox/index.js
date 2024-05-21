@@ -3,9 +3,9 @@ import './index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-const MainComplaintBox=(props)=>{
+const MainComplimenttBox=(props)=>{
     const {maincomplaintListDetails}=props;
-    const {logo,pathname, head,para,id}=maincomplaintListDetails;
+    const {logo,pathname, head,para}=maincomplaintListDetails;
 
     return(
         <Link to={pathname} className="remove-line">
@@ -20,4 +20,4 @@ const MainComplaintBox=(props)=>{
 }
 
 
-export default MainComplaintBox
+export default MainComplimenttBox

@@ -1,0 +1,24 @@
+.img-complaintBox{
+    height:100px;
+    width:100px;
+}
+
+.complaintBox-stying{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2%;
+    margin: 2%;
+    width: 25%;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-select{
+    border-style: solid;
+    background-color: white;
+    border-width: 1px;
+    border-color: #29b7c4;
+    color:#29b7c4;
+}
