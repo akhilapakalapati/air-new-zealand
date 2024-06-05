@@ -4,11 +4,12 @@ import './index.css'
 
 const  ComplaintBoxInside = (props) =>{
 
-    const {ComplaintBoxListDetails,mainHideBox}=props;
+    const {ComplaintBoxListDetails,mainHideBox,textUpdate}=props;
     const {id,url,text,pathname}=ComplaintBoxListDetails;
 
     const subMainHideBox=()=>{
         mainHideBox(true)
+        textUpdate(text)
     }
 
     return(

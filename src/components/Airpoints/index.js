@@ -33,8 +33,23 @@ const AirpointsTop=()=>{
 const Airpoints=()=>{
 
     const [showForm, setShowForm] = useState(false);
+    const [textdownbox,setTextdownbox] = useState("")
+
 
     const mainHideBox=(props) => setShowForm(props)
+
+    const textUpdate=(props) => {
+        setTextdownbox(props)
+    }
+
+    const downBox=(text)=>{
+        return(<div className='Complainttop-conatiner'>
+        <div>
+            <p className='complaintTop-para-1'>{text}</p>
+        </div>
+        <button className='complainttop-btn' onClick={() => setShowForm(false)}>Change</button>
+    </div>)
+    }
 
 
 
@@ -49,9 +64,9 @@ const Airpoints=()=>{
         <AirpointsTop/>
         <h2>What help do you need with Airpoints?</h2>
         {!showForm && (<div className='airpoints-box-style'>
-            {airpointsList.map(items=>(<ComplaintThirdBox thirdBoxList={items}  mainHideBox={mainHideBox}key={items.id}/>))}
+            {airpointsList.map(items=>(<ComplaintThirdBox thirdBoxList={items}  mainHideBox={mainHideBox}  textUpdate={textUpdate}  key={items.id}/>))}
         </div>)}
-        {showForm && <div><ComplaintForm/></div>}
+        {showForm && <div><div>{downBox(textdownbox)}</div><ComplaintForm/></div>}
     </div>
 </div>)
 
