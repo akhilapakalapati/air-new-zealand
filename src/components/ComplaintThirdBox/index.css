@@ -1,6 +1,6 @@
-.remove-line{
-    text-decoration: none;
-    color:inherit;
+.para-complaintThirdBox{
+    font-weight: 700;
+    font-size:17px;
 }
 
 .maincomplaint-style{
@@ -8,6 +8,7 @@
     margin:20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
+    width:250px;
 }
 
 .btn-maincomplaint{
@@ -17,4 +18,9 @@
     border-color: #29b7c4;
     color:#29b7c4;
     border-radius: 5px;
+}
+
+.remove-line{
+    text-decoration: none;
+    color:inherit;
 }

@@ -1,0 +1,31 @@
+/* phone numner */
+
+.phone-number-input {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  .phone-number-input label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .phone-number-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .country-code-dropdown {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .phone-number-input-field {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }

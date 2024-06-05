@@ -4,7 +4,7 @@ import {faThumbsDown,faThumbsUp,faQuestion} from '@fortawesome/free-solid-svg-ic
 
 
 
-//list 
+//list
 
 const maincomplaintList=[
   { id:1,

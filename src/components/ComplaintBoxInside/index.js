@@ -2,20 +2,23 @@ import { Link } from 'react-router-dom';
 import './index.css'
 
 
-const ComplaintBox = (props) =>{
+const  ComplaintBoxInside = (props) =>{
 
-    const {ComplaintBoxListDetails}=props;
+    const {ComplaintBoxListDetails,mainHideBox}=props;
     const {id,url,text,pathname}=ComplaintBoxListDetails;
 
+    const subMainHideBox=()=>{
+        mainHideBox(true)
+    }
 
     return(
         <Link to={pathname} className="remove-line complaintBox-stying">
     <div>
         <img src={url} alt={id} className='img-complaintBox'/>
         <p>{text}</p>
-        <button className='btn-select' >select</button>
+        <button className='btn-select' onClick={subMainHideBox}>select</button>
     </div>
     </Link>)
 }
 
-export default ComplaintBox;
+export default ComplaintBoxInside;
