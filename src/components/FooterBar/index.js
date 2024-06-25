@@ -28,7 +28,7 @@ const FooterBar=()=>(
             </li>
         </ul>
         <p>A STAR ALLIANCE MEMBERS</p>
-        <p>Copyright <snap> c </snap> 2024 Air New Zealand Limited</p>
+        <p>Copyright <snap className="c-styling"> c </snap> 2024 Air New Zealand Limited</p>
     </div>
 )
 

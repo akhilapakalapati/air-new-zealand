@@ -22,3 +22,13 @@
     border-color: #29b7c4;
     color:#29b7c4;
 }
+
+@media screen and (max-width: 768px) {
+    .complaintBox-stying{
+        width: fit-content;
+        width: 300px;
+        height: fit-content;
+        text-align: center;
+        padding: 20px;
+    }
+  }

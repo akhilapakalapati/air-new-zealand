@@ -5,6 +5,19 @@
     margin: 20px;
   }
 
+.title-input-style,
+.email-style,
+.text-style,
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
   .phone-number-input label {
     display: block;
     margin-bottom: 10px;

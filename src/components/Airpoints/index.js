@@ -7,11 +7,11 @@ import './index.css';
 
 const airpointsList=[{
     id:1,
-    heading:"Airpoints membership",
+    text:"Airpoints membership",
     pathname:"/airpoints",
 },{
     id:2,
-    heading:"Airpoints store",
+    text:"Airpoints store",
     pathname:"/airpoints",
 }]
 
@@ -64,7 +64,10 @@ const Airpoints=()=>{
         <AirpointsTop/>
         <h2>What help do you need with Airpoints?</h2>
         {!showForm && (<div className='airpoints-box-style'>
-            {airpointsList.map(items=>(<ComplaintThirdBox thirdBoxList={items}  mainHideBox={mainHideBox}  textUpdate={textUpdate}  key={items.id}/>))}
+            {airpointsList.map(items=>(<ComplaintThirdBox thirdBoxList={items}  mainHideBox={mainHideBox}  textUpdate={textUpdate} mainHideBox={(show) => {
+                mainHideBox(show);
+                textUpdate(items.text); // Update the textdownbox state when an item is clicked
+              }}  key={items.id}/>))}
         </div>)}
         {showForm && <div><div>{downBox(textdownbox)}</div><ComplaintForm/></div>}
     </div>
@@ -72,4 +75,4 @@ const Airpoints=()=>{
 
 }
 
-export default Airpoints
+export default Airpoints;

@@ -5,6 +5,7 @@
     align-items: flex-end;
     background-color:black;
     color:white;
+    padding: 10px;
 }
 
 .sub-list-footerbar{
@@ -20,4 +21,15 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
+}
+
+.c-styling{
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    margin:10px;
+    border-radius:30px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 5px;
 }

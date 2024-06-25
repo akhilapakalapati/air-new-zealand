@@ -7,23 +7,28 @@ import ComplaintBoxInside from '../ComplaintBoxInside';
 
 const atTheAirportList=[{
     id:1,
-    text:"Airpoints membership",
-    pathname:"/at-the-airport",
+    text:"I am due to fly",
+    pathname:"/bookings-and-airfares",
     url:"https://t4.ftcdn.net/jpg/05/28/69/29/360_F_528692947_a24JXuek0FtFN2GVUwf0vNvBHltKbGkC.jpg",
 },{
     id:2,
-    text:"Airpoints store",
-    pathname:"/at-the-airport",
+    text:"I have flown",
+    pathname:"/bookings-and-airfares",
     url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2BfK23cuEQlYG4Ei0d-H5OdkfH6j8ttw-ocSrGQ-g7NJ3u9AJIeKfBYyw9DO60vMj-CA&usqp=CAU",
+},{
+    id:3,
+    text:"Not related to a flight",
+    pathname:"/bookings-and-airfares",
+    url:"https://pngimg.com/d/question_mark_PNG115.png",
 }]
 
 
 
-const AtTheAirportTop=()=>{
+const KoruTop=()=>{
     return(<div className='Complainttop-conatiner'>
     <div>
-        <img src="https://static.vecteezy.com/system/resources/previews/008/326/114/non_2x/real-estate-building-logo-icon-design-free-vector.jpg" alt="thumbsup-logo" className="thumbsup-logo-cf"/>
-        <p className='complaintTop-para-1'>At the airport</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdHKVzT-vbDld4bLtwC0rtcw29P9tpGV7IZYHDl8YLRSh-hdG-tXpHRYXlGf2p4MbEMGY&usqp=CAU" alt="thumbsup-logo" className="thumbsup-logo-cf"/>
+        <p className='complaintTop-para-1'>Koru or lounges</p>
     </div>
     <Link to="/MakeComplaint">
     <button className='complainttop-btn'>Change</button>
@@ -31,7 +36,7 @@ const AtTheAirportTop=()=>{
 </div>)
 }
 
-const AtTheAirport=()=>{
+const Koru=()=>{
 
     const [showForm, setShowForm] = useState(false);
 
@@ -60,7 +65,7 @@ const AtTheAirport=()=>{
             <ComplaintTop/>
         </div>
         <h2>What is your complaint about?</h2>
-        <AtTheAirportTop/>
+        <KoruTop/>
         <h2>What help do you need with Airpoints?</h2>
         {!showForm && (<div className='airpoints-box-style'>
             {atTheAirportList.map(items=>(<ComplaintBoxInside ComplaintBoxListDetails={items} mainHideBox={mainHideBox} textUpdate={textUpdate} key={items.id}/>))}
@@ -72,4 +77,4 @@ const AtTheAirport=()=>{
 
 }
 
-export default AtTheAirport;
+export default Koru;

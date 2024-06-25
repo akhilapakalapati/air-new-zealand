@@ -62,8 +62,8 @@ const ComplaintBoxList=[
 const ComplaintTop=()=>(
     <div className='Complainttop-conatiner'>
         <div>
-            <img src="https://media.istockphoto.com/id/1316208739/vector/red-thumb-down-icon-isolated-on-white-background-dislike-button-social-media-icon-vector.jpg?s=612x612&w=0&k=20&c=4SA8ATamhjLQIF1l3MUhz4-LSyPCJ77mf19PtiGLVK8=" alt="thumbsup-logo" className="thumbsup-logo-cf"/>
-            <p className='complaintTop-para-1'>Leave a complaint</p>
+            <img src="https://img.freepik.com/premium-vector/free-vector-question-mark-icon_901408-624.jpg" alt="thumbsup-logo" className="thumbsup-logo-cf"/>
+            <p className='complaintTop-para-1'>Ask a question</p>
         </div>
         <Link to="/">
         <button className='complainttop-btn'>Change</button>
@@ -72,7 +72,7 @@ const ComplaintTop=()=>(
 )
 
 
-const MakeComplaint = () =>{
+const AskQuestion = () =>{
 
     return(<div className='complimentFile-main-container'>
     <h1>Help and support</h1>
@@ -87,5 +87,5 @@ const MakeComplaint = () =>{
 </div>)
 }
 
-export default MakeComplaint;
+export default AskQuestion;
 export {ComplaintTop};

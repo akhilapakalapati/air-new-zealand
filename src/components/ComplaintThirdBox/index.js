@@ -3,7 +3,7 @@ import './index.css';
 
 const ComplaintThirdBox = (props)=>{
     const {thirdBoxList, mainHideBox}=props;
-    const {heading,pathname}=thirdBoxList;
+    const {text}=thirdBoxList;
 
     const subMainHideBox=()=>{
         mainHideBox(true)
@@ -11,13 +11,11 @@ const ComplaintThirdBox = (props)=>{
 
 
     return(
-        <Link to={pathname} className="remove-line">
 
     <div className='maincomplaint-style'>
-        <p className='para-complaintThirdBox'>{heading}</p>
+        <p className='para-complaintThirdBox'>{text}</p>
         <button className='btn-maincomplaint'  onClick={subMainHideBox}>Select</button>
     </div>
-    </Link>
     )
 }
 

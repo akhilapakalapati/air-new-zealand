@@ -1,0 +1,79 @@
+/* src/index.css */
+.signform-background{
+    display: block;
+    background-color: black;
+    color:white;
+    margin:10%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 20px;
+    padding: 30px;
+  }
+
+.inputbox{
+    background-color:inherit;
+}
+
+
+.Airpoints-signform{
+    display: block;
+}
+
+.signform {
+    margin: 0;
+    height: 100vh;
+    text-align:left;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow: hidden;
+    background: linear-gradient(45deg, red 0%, blue 99%, #ffffff 100%);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 10s ease infinite;
+  }
+
+.headline{
+    margin: 10px;
+}
+
+.heading-zealand{
+    font-style: italic;
+}
+
+.sign-btn{
+    padding: 5px;
+    padding-left: 20px;
+    padding-right:20px;
+    background-color:#29b7c4;
+    border-style: none;
+    border-radius: 10px;
+    color:white;
+    font-size: 17px;
+}
+
+.join-btn{
+    border-style: solid;
+    background-color: inherit;
+    border-width: 1px;
+    border-color: #29b7c4;
+    color:#29b7c4;
+    font-size:17px;
+    padding:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+}
+
+
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
